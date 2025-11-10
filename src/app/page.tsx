@@ -12,12 +12,12 @@ import { MdArrowForwardIos } from "react-icons/md";
 // import PortableText from "react-portable-text";
 
 
-interface Blog {
-  _id: string;
-  title: string;
-  image?: string;
-  content?: any;
-}
+// interface Blog {
+//   _id: string;
+//   title: string;
+//   image?: string;
+//   content?: any;
+// }
 
 export default async function Home() {
   const client = createClient({
@@ -35,8 +35,8 @@ export default async function Home() {
     content
   }`;
 
-  const blogs: Blog[] = await client.fetch(query);
-  console.log(blogs);
+  // const blogs: Blog[] = await client.fetch(query);
+  // console.log(blogs);
 
   return (
     <><>
@@ -1020,7 +1020,7 @@ export default async function Home() {
     <div
       className="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
     >
-     {blogs.map((blog) => (
+     {/* {blogs.map((blog) => (
       <Link key={blog._id} href="/post" className="shadow">
         <div
           style={{ backgroundImage: `url(${blog.image || "/assets/img/post-02.png"})` }}
@@ -1042,7 +1042,7 @@ export default async function Home() {
           </span>
         </div>
       </Link>
-    ))}
+    ))} */}
 
       {/* <Link href="/post" className="shadow">
         <div
