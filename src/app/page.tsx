@@ -1,5 +1,6 @@
 import { createClient } from "next-sanity";
 import Head from "next/head";
+import Link from "next/link";
 import Script from "next/script";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -7,8 +8,8 @@ import { FaTwitter } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { MdArrowForwardIos } from "react-icons/md";
-import Image from "next/image";
-import PortableText from "react-portable-text";
+// import Image from "next/image";
+// import PortableText from "react-portable-text";
 
 
 interface Blog {
@@ -120,9 +121,9 @@ export default async function Home() {
        <div className="w-full z-50 top-0 py-3 sm:py-5  absolute">
   <div className="container flex items-center justify-between">
     <div>
-      <a href="/">
+      <Link href="/">
         <img src="/assets/img/logo.svg" className="w-24 lg:w-48" alt="logo image" />
-      </a>
+      </Link>
     </div>
     <div className="hidden lg:block hover:underline">
       <ul className="flex items-center ">
@@ -244,10 +245,10 @@ export default async function Home() {
       
       <li className="py-2">
         
-        <a href="/about"><span
+        <Link href="/about"><span
           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
           >About</span>
-          </a>
+          </Link>
           <span className="block h-0.5 w-full bg-transparent group"></span>
       </li>
       
@@ -336,7 +337,7 @@ export default async function Home() {
         <h1
           className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
         >
-          Hello I'm Christy Smith!
+          Hello I m Christy Smith!
         </h1>
         <div
           className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
@@ -344,7 +345,7 @@ export default async function Home() {
           <div
             className="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
           >
-            <p className="font-body text-lg uppercase text-white">Let's connect</p>
+            <p className="font-body text-lg uppercase text-white">Let s connect</p>
             <div className="hidden sm:block">
               <i className="bx bx-chevron-right text-3xl text-yellow"></i>
             </div>
@@ -352,24 +353,24 @@ export default async function Home() {
           <div
             className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
           >
-            <a href="/" className="text-white hover:text-yellow text-2xl">
+            <Link href="/" className="text-white hover:text-yellow text-2xl">
               <MdArrowForwardIos />
-            </a>
-            <a href="/" className="text-white ml-2 hover:text-yellow text-2xl">
+            </Link>
+            <Link href="/" className="text-white ml-2 hover:text-yellow text-2xl">
               <FaFacebookSquare />
-            </a>
-            <a href="/" className="pl-4 text-white hover:text-yellow text-2xl">
+            </Link>
+            <Link href="/" className="pl-4 text-white hover:text-yellow text-2xl">
               <FaTwitter />
-            </a>
-            <a href="/" className="pl-4 text-white hover:text-yellow text-2xl">
+            </Link>
+            <Link href="/" className="pl-4 text-white hover:text-yellow text-2xl">
             <FaDribbble />
-            </a>
-            <a href="/" className="pl-4 text-white hover:text-yellow text-2xl">
+            </Link>
+            <Link href="/" className="pl-4 text-white hover:text-yellow text-2xl">
              <FaLinkedinIn />
-            </a>
-            <a href="/" className="pl-4 text-white hover:text-yellow text-2xl">
+            </Link>
+            <Link href="/" className="pl-4 text-white hover:text-yellow text-2xl">
             <FaInstagram />
-          </a>
+          </Link>
           </div>
         </div>
       </div>
@@ -388,7 +389,7 @@ export default async function Home() {
       <h4
         className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
       >
-        I'm Christy Smith, a Web Designer & Photographer
+        I m Christy Smith, Link Web Designer & Photographer
       </h4>
       <p className="pt-6 font-body leading-relaxed text-grey-20">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -413,31 +414,31 @@ export default async function Home() {
         <div
           className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
         >
-          <a href="/">
+          <Link href="/">
             <i
               className="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
-          <a href="/" className="pl-4">
+          </Link>
+          <Link href="/" className="pl-4">
             <i
               className="bx bxl-twitter text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
-          <a href="/" className="pl-4">
+          </Link>
+          <Link href="/" className="pl-4">
             <i
               className="bx bxl-dribbble text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
-          <a href="/" className="pl-4">
+          </Link>
+          <Link href="/" className="pl-4">
             <i
               className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
-          <a href="/" className="pl-4">
+          </Link>
+          <Link href="/" className="pl-4">
             <i
               className="bx bxl-instagram text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -490,7 +491,7 @@ export default async function Home() {
   <h2
     className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
   >
-    Here's what I'm good at
+    Here s what I m good at
   </h2>
   <h3
     className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
@@ -665,38 +666,38 @@ export default async function Home() {
     Check out my Portfolio
   </h2>
   <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-    Here's what I have done in the past
+    Here s what I have done in the past
   </h3>
 
   <div className="mx-auto grid max-w-4xl w-full grid-cols-1 gap-8 pt-12 sm:grid-cols-2 lg:grid-cols-2">
-    <a href="/" className="mx-auto w-11/12 transform transition-all hover:scale-105 md:mx-0">
+    <Link href="/" className="mx-auto w-11/12 transform transition-all hover:scale-105 md:mx-0">
       <img
         src="/assets/img/portfolio-apple.jpeg"
         className="w-full shadow rounded"
         alt="portfolio image"
       />
-    </a>
-    <a href="/" className="mx-auto w-11/12 transform transition-all hover:scale-105 md:mx-0">
+    </Link>
+    <Link href="/" className="mx-auto w-11/12 transform transition-all hover:scale-105 md:mx-0">
       <img
         src="/assets/img/portfolio-stripe.jpeg"
         className="w-full shadow rounded"
         alt="portfolio image"
       />
-    </a>
-    <a href="/" className="mx-auto w-11/12 transform transition-all hover:scale-105 md:mx-0">
+    </Link>
+    <Link href="/" className="mx-auto w-11/12 transform transition-all hover:scale-105 md:mx-0">
       <img
         src="/assets/img/portfolio-fedex.jpeg"
         className="w-full shadow rounded"
         alt="portfolio image"
       />
-    </a>
-    <a href="/" className="mx-auto w-11/12 transform transition-all hover:scale-105 md:mx-0">
+    </Link>
+    <Link href="/" className="mx-auto w-11/12 transform transition-all hover:scale-105 md:mx-0">
       <img
         src="/assets/img/portfolio-microsoft.jpeg"
         className="w-full shadow rounded"
         alt="portfolio image"
       />
-    </a>
+    </Link>
   </div>
 </div>
 
@@ -762,7 +763,7 @@ export default async function Home() {
   <h3
     className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
   >
-    Here's what I did before freelancing
+    Here s what I did before freelancing
   </h3>
 
   <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
@@ -1020,7 +1021,7 @@ export default async function Home() {
       className="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
     >
      {blogs.map((blog) => (
-      <a key={blog._id} href="/post" className="shadow">
+      <Link key={blog._id} href="/post" className="shadow">
         <div
           style={{ backgroundImage: `url(${blog.image || "/assets/img/post-02.png"})` }}
           className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -1040,10 +1041,10 @@ export default async function Home() {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
           </span>
         </div>
-      </a>
+      </Link>
     ))}
 
-      {/* <a href="/post" className="shadow">
+      {/* <Link href="/post" className="shadow">
         <div
         style={{ backgroundImage: "url(/assets/img/post-02.png)" }}         
         className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -1064,8 +1065,8 @@ export default async function Home() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
           >
         </div>
-      </a>
-      <a href="/post" className="shadow">
+      </Link>
+      <Link href="/post" className="shadow">
         <div
           style={{ backgroundImage: "url(/assets/img/post-03.png)" }}
           className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -1085,7 +1086,7 @@ export default async function Home() {
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
         </div>
-      </a> */}
+      </Link> */}
     </div>
   </div>
 </div>
@@ -1094,7 +1095,7 @@ export default async function Home() {
   <h2
     className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
   >
-    Here's a contact form
+    Here s Link contact form
   </h2>
   <h4
     className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
@@ -1192,7 +1193,7 @@ export default async function Home() {
       className="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl"
     >
       Keep <span className="font-bold">up-to-date</span> <br />
-      with what I'm up to
+      with what I m up to
     </h3>
     <form className="mt-6 flex flex-col justify-center sm:flex-row">
       <input
@@ -1217,23 +1218,23 @@ export default async function Home() {
       © Copyright 2022. All right reserved, ATOM.
     </p>
     <div className="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-      <a href="/">
+      <Link href="/">
         <i
           className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
         ></i>
-      </a>
-      <a href="/" className="pl-4">
+      </Link>
+      <Link href="/" className="pl-4">
         <i className="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-      </a>
-      <a href="/" className="pl-4">
+      </Link>
+      <Link href="/" className="pl-4">
         <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
-      </a>
-      <a href="/" className="pl-4">
+      </Link>
+      <Link href="/" className="pl-4">
         <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-      </a>
-      <a href="/" className="pl-4">
+      </Link>
+      <Link href="/" className="pl-4">
         <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-      </a>
+      </Link>
     </div>
   </div>
 </div>
@@ -1251,7 +1252,7 @@ export default async function Home() {
     //         content={blogs[0].content}
     //         projectId="84pc1jel"
     //         dataset="production"
-    //         // Optionally override marks, decorators, blocks, etc. in a flat
+    //         // Optionally override marks, decorators, blocks, etc. in Link flat
     //         // structure without doing any gymnastics
     //         serializers={{
     //           h1: (props: any) => <h1 style={{ color: "red" }} {...props} />,
